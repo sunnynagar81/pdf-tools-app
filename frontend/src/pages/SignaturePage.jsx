@@ -22,7 +22,7 @@ function SignaturePage() {
     formData.append("signature", signature);
 
     const res = await axios.post(
-      "http://localhost:5000/api/pdf/sign",
+      "https://pdf-tools-app-knwd.onrender.com/api/pdf/sign",
       formData,
       {
         responseType: "blob"

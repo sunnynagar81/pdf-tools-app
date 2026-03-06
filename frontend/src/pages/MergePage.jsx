@@ -14,7 +14,7 @@ function MergePage() {
     }
 
     const res = await axios.post(
-      "http://localhost:5000/api/pdf/merge",
+      "https://pdf-tools-app-knwd.onrender.com/api/pdf/merge",
       formData,
       { responseType: "blob" }
     );

@@ -11,7 +11,7 @@ function CompressPage() {
     formData.append("file", file);
 
     const res = await axios.post(
-      "http://localhost:5000/api/pdf/compress",
+      "https://pdf-tools-app-knwd.onrender.com/api/pdf/compress",
       formData,
       { responseType: "blob" }
     );
