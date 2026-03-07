@@ -16,7 +16,7 @@ function Dashboard() {
     formData.append("file", file);
 
     try {
-      await axios.post("http://localhost:5000/api/files/upload", formData, {
+      await axios.post("https://pdf-tools-app-knwd.onrender.com/api/files/upload", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -32,7 +32,7 @@ function Dashboard() {
 
   const getFiles = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/files", {
+      const res = await axios.get("https://pdf-tools-app-knwd.onrender.com/api/files", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,7 +46,7 @@ function Dashboard() {
 
   const deleteFile = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/files/${id}`, {
+      await axios.delete(`https://pdf-tools-app-knwd.onrender.com/api/files/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -145,7 +145,7 @@ className="bg-green-500 text-white p-10 rounded-xl text-center cursor-pointer ho
               <div className="flex gap-3">
 
                 <a
-                  href={`http://localhost:5000/uploads/${f.filename}`}
+                  href={`https://pdf-tools-app-knwd.onrender.com/uploads/${f.filename}`}
                   target="_blank"
                   className="text-blue-500"
                 >
