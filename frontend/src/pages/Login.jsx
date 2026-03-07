@@ -13,7 +13,7 @@ export default function Login() {
 
     try {
       const res = await axios.post(
-        "https://pdf-tools-app-knwd.onrender.com/api/auth/login",
+        "https://pdf-tools-app-knwd.onrender.com/login",
         { email, password }
       );
 
